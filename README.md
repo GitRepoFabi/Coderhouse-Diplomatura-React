@@ -22,7 +22,7 @@ E-commerce donde se mostrarán artículos relacionados a la tecnología
 2 - Ir al directorio del proyecto
 
 ```bash
-  cd e-commerce-tecno
+  cd Coderhouse-Diplomatura-React
 ```
 
 3 - Instala las dependencias
