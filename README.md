@@ -36,3 +36,9 @@ E-commerce donde se mostrarán artículos relacionados a la tecnología
 ```bash
   npm run dev
 ```
+
+## Componentes agregados:
+
+- Navbar: Contiene el logo, las categorìas y la incorporación del elemento CardWidget (muestra el carrito de compras con el número de elementos)
+- CardWidget: Muestra el ícono del carrito junto con el valor de los elementos del mismo.
+- ItemListContainter: Despliega el mensaje enviado por props.
