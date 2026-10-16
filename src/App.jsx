@@ -1,7 +1,13 @@
-import "./App.css";
+import NavBar from "./components/Navbar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
-  return <h1>E-commerce Tecno</h1>;
+  return (
+    <>
+      <NavBar />
+      <ItemListContainer greeting="Bienvenidos | Tecno Store" />
+    </>
+  );
 }
 
 export default App;
