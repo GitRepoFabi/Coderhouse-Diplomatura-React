@@ -37,13 +37,13 @@ E-commerce donde se mostrarán artículos relacionados a la tecnología
   npm run dev
 ```
 
-## Componentes agregados:
+## Componentes agregados en Pre-Entrega 2:
 
 - Navbar: Contiene el logo, las categorìas y la incorporación del elemento CardWidget (muestra el carrito de compras con el número de elementos)
 - CardWidget: Muestra el ícono del carrito junto con el valor de los elementos del mismo.
 - ItemListContainter: Despliega el mensaje enviado por props.
 
-## Componentes y archivos agregados en Pre-entrega 2
+## Componentes y archivos agregados en Pre-entrega 3:
 
 - **ItemListContainer:** Componente contenedor que maneja el ciclo de vida y los estados (`useState`, `useEffect`) para la carga de productos y el estado de espera (`loading`).
 - **ItemList:** Componente de presentación encargado de iterar y mapear el array de productos renderizando cada `ProductCard` con su correspondiente `key`.
@@ -86,9 +86,4 @@ E-commerce donde se mostrarán artículos relacionados a la tecnología
 ├── package.json
 ├── README.md
 └── vite.config.js
-
-
-
-
-
 ```
