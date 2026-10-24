@@ -42,3 +42,53 @@ E-commerce donde se mostrarán artículos relacionados a la tecnología
 - Navbar: Contiene el logo, las categorìas y la incorporación del elemento CardWidget (muestra el carrito de compras con el número de elementos)
 - CardWidget: Muestra el ícono del carrito junto con el valor de los elementos del mismo.
 - ItemListContainter: Despliega el mensaje enviado por props.
+
+## Componentes y archivos agregados en Pre-entrega 2
+
+- **ItemListContainer:** Componente contenedor que maneja el ciclo de vida y los estados (`useState`, `useEffect`) para la carga de productos y el estado de espera (`loading`).
+- **ItemList:** Componente de presentación encargado de iterar y mapear el array de productos renderizando cada `ProductCard` con su correspondiente `key`.
+- **ProductCard:** Componente de presentación individual que muestra la información de cada producto (imagen, nombre, descripción, precio y stock).
+- **Spinner:** Componente visual para mostrar el estado de carga mientras se resuelve la petición asíncrona.
+- **mock/asyncMock.js:** Módulo que contiene el mock de datos (array de productos) y exporta la función `getProducts`, la cual retorna una `Promise` que resuelve los datos con un retraso de 2 segundos mediante `setTimeout`.
+
+## Mapa del sitio:
+
+```
+├── public/
+│   └── requerimientos.md
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   ├── components/
+│   │   ├── ItemList/
+│   │   │   ├── ItemList.jsx
+│   │   │   └── ItemList.module.css
+│   │   ├── ItemListContainer/
+│   │   │   ├── ItemListContainer.jsx
+│   │   │   └── ItemListContainer.module.css
+│   │   ├── Navbar/
+│   │   │   ├── NavBar.jsx
+│   │   │   └── Navbar.module.css
+│   │   ├── ProductCard/
+│   │   │   └── ProductCard.jsx
+│   │   └── Spinner/
+│   │       └── Spinner.jsx
+│   ├── mock/
+│   │   └── asyncMock.js
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+
+
+
+
+
+```

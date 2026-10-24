@@ -1,4 +1,4 @@
-import CardWidget from "../CardWidget/CardWidget";
+import CartWidget from "../CartWidget/CartWidget";
 import styles from "./Navbar.module.css";
 import logo from "../../../src/assets/images/logo.jpg";
 
@@ -8,13 +8,24 @@ const NavBar = () => {
       <img src={logo} alt="logo ecommerce" />
       <ul>
         <a href="#">
-          <li>Tecnología</li>
+          <li>Auriculares inalámbricos</li>
         </a>
         <a href="#">
-          <li>Informática</li>
+          <li>Relojes</li>
+        </a>
+        <a href="#">
+          <li>Mochilas</li>
+        </a>
+
+        <a href="#">
+          <li>Tecnología</li>
+        </a>
+
+        <a href="#">
+          <li>Termos</li>
         </a>
       </ul>
-      <CardWidget />
+      <CartWidget />
     </div>
   );
 };
