@@ -51,15 +51,36 @@ E-commerce donde se mostrarán artículos relacionados a la tecnología
 - **Spinner:** Componente visual para mostrar el estado de carga mientras se resuelve la petición asíncrona.
 - **mock/asyncMock.js:** Módulo que contiene el mock de datos (array de productos) y exporta la función `getProducts`, la cual retorna una `Promise` que resuelve los datos con un retraso de 2 segundos mediante `setTimeout`.
 
+## Componentes y archivos agregados en Pre-entrega 4:
+
+- **ItemCount:** Componente contador del producto
+- **ItemDetailContainer:** Componente contenedor que maneja el ciclo de vida y los estados (`useState`, `useEffect`) para la carga de 1 producto específico.
+- **ItemDetail:** Componente de presentación encargado de mapear el array de producto renderizando las prop's solicitadas
+
 ## Mapa del sitio:
 
 ```
 ├── public/
-│   └── requerimientos.md
 ├── src/
 │   ├── assets/
 │   │   └── images/
+│   │       ├── auriculares.jpeg
+│   │       ├── logo.jpg
+│   │       ├── mochila.webp
+│   │       ├── reloj.jpg
+│   │       ├── teclado.jpg
+│   │       └── termo.jpg
 │   ├── components/
+│   │   ├── CartWidget/
+│   │   │   └── CartWidget.jsx
+│   │   ├── ItemCount/
+│   │   │   ├── ItemCount.jsx
+│   │   │   └── ItemCount.module.css
+│   │   ├── ItemDetail/
+│   │   │   ├── ItemDetail.jsx
+│   │   │   └── ItemDetail.module.css
+│   │   ├── ItemDetailContainer/
+│   │   │   └── ItemDetailContainer.jsx
 │   │   ├── ItemList/
 │   │   │   ├── ItemList.jsx
 │   │   │   └── ItemList.module.css
@@ -68,9 +89,10 @@ E-commerce donde se mostrarán artículos relacionados a la tecnología
 │   │   │   └── ItemListContainer.module.css
 │   │   ├── Navbar/
 │   │   │   ├── NavBar.jsx
-│   │   │   └── Navbar.module.css
+│   │   │   └── NavBar.module.css
 │   │   ├── ProductCard/
-│   │   │   └── ProductCard.jsx
+│   │   │   ├── ProductCard.jsx
+│   │   │   └── ProductCard.module.css
 │   │   └── Spinner/
 │   │       └── Spinner.jsx
 │   ├── mock/
