@@ -1,0 +1,46 @@
+.itemDetailContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.itemDetailGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.itemDetailImgBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.itemDetailImg {
+  width: 100%;
+  max-width: 350px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.itemDetailInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.itemDetailCount {
+  margin-top: 16px;
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .itemDetailGrid {
+    flex-direction: column;
+  }
+}

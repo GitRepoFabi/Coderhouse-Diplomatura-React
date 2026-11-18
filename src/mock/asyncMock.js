@@ -64,3 +64,12 @@ export const getProducts = () => {
     }, 2000);
   });
 };
+
+export function getProductById(productId) {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      const producto = products.find((p) => p.id === productId);
+      producto ? res(producto) : rej(new Error("Producto no encontrado"));
+    }, 5000);
+  });
+}
